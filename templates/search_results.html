@@ -1,0 +1,10 @@
+<!-- templates/search_results.html -->
+<h1>Search Results</h1>
+
+<ul>
+  {% for exhibition in object_list %}
+    <li>
+      {{ exhibition.name }}, {{ exhibition.date }}, {{ exhibition.place }}
+    </li>
+  {% endfor %}
+</ul>
