@@ -10,7 +10,7 @@ class HomePageView(TemplateView):
 
 
 class SearchResultsView(ListView):
-    model = Exhibition
+    model = City
     template_name = 'search_results.html'
 
     def get_queryset(self):  # new
